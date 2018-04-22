@@ -1,0 +1,12 @@
+
+  <a routerLink="/todoAdd"  class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+<ul>
+  <li *ngFor="let todo of todos | async">
+    {{todo.content}}
+
+    <a (click)="removeTodo(todo._id)" class="waves-effect waves-light btn">Excluir</a>
+
+  </li>
+
+</ul>
